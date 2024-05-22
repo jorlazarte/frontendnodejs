@@ -1,14 +1,64 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
+		.contForm {
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  /*background-color: #2196F3;*/
+		  padding: 10px;
+		}
+		.item {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+		  font-size: 16px;
+		  height: auto;
+		  width: auto;
+		  display: block;
+		  text-align: left;
+		  color: #000;
+		  margin: 5px;
+		}
+
+		.item .inp{justify-content: start; text-align: left; display: block;}
+		label{ text-align:right; justify-content: end; display: block;}
+
+  	.boton{display: flex; grid-column-start: 1; grid-column-end: -1; justify-content: center; align-items: center;}
+  	/*********************************** celular ***************************/
+		@media only screen and (max-width: 550px) {
+			.contForm {
+				display: grid;
+				/*background-color: #2196F3;*/
+				padding: 10px;
+				width: 95%;
+				justify-content: center;
+			}
+
+			div > label{
+				color: #ccc;
+				width: auto;
+				/*background: #999;*/
+				text-align: left;
+			}
+
+			.item {
+				grid-column-start: 1;
+				grid-column-end: 3;
+				font-size: 15px;
+				height: auto;
+				text-align: left;
+
+			}
+
+			.boton{display: flex; grid-column-start: 1; grid-column-end: -1; justify-content: center; align-items: center;}
+		}
+
+
+
+/*
 .contForm{
-
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 10px;
-	font-family: 400 12px/16px "Monserrat";
-	width: auto;
-	color:#000;
-
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  background-color: #2196F3;
+		  padding: 10px;
 }
 
 .itemCont {
@@ -17,8 +67,9 @@
 	border-radius: 5px;
 	width: auto;
 	height: auto;
-	/*background: #ccc;*/
+
 	padding-top: 4px;
+	
 }
 
 .label{
@@ -26,18 +77,19 @@
 	margin-right: 2px;
 	font-size: 15px;
 	color:#000;
-	/*background: #ccc;*/
+
 	padding-top: 6px;
 	flex-direction: row-reverse;
 
 }
 
+.itemCont .label{grid-area: label;}
+.itemCont .inp{grid-area: input;}
+
 .inp{
 	text-align: left;
 	margin-left: 2px;
 	display: flex;
-	/*background: #ddd;*/
-
 
 }
 
@@ -72,9 +124,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before {
 	content: "";
-	/*
-	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-	*/
+
 	transform: scale(0);
 	background-color: #888;
 	height: 9px;
@@ -105,7 +155,7 @@ div.auto{background-image: url('../images/icons8-sedán-20.png');}
 div.oso{background-image: url('../images/icons8-felpa-20.png');}
 div.puzl{background-image: url('../images/icons8-puzle-20.png');}
 
-div.itemBoton{grid-area: 6 / 1 / 6 / 3; align-items: center;}
+div.itemBoton{grid-area: 6 / 1 / 6 / 3; align-items: center; grid-area: boton;}
 
 .boton{
   background-color: #000;
@@ -120,4 +170,19 @@ div.itemBoton{grid-area: 6 / 1 / 6 / 3; align-items: center;}
   border-radius: 15px;
 }
 .boton:hover{opacity: 1; cursor:pointer;}
-/***************************/
+
+
+@media only screen and (max-width: 768px) {
+	.contForm{
+			background: #ddd;
+	}
+	.itemCont .label{
+	  grid-column-start: 1;
+  	grid-column-end: 3;
+  }
+ 	.itemCont .inp{
+	  grid-column-start: 1;
+  	grid-column-end: 3;
+  }
+}
+*/

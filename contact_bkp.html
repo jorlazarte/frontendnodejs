@@ -52,55 +52,50 @@
 			</div>
 	</header>
 	<main>
-			<div class="mainTitulo">Dejanos un mensaje y contanos de vos, de tu infancia!</div>
+			<div class="mainTitulo">Bienvenido al sitio de los juguetes usados!</div>
 			<div class="mainTexto">
 			Nuestra obligación es trabajar para que todos los niños y sus familias puedan encontrar ese juguete tan especial que recordarán con cariño toda su vida.
 			</div>
 			<form class="contForm" id="contForm" onsubmit="return validateForm()" method="post">
-				<div class="item label">
-					<label>Nombre</label>
-				</div>
-				<div class="item inp">
-					<input type="text" name="nombre">
+				<div class="itemCont label">Nombre y Apellido</div>
+				<div class="itemCont inp">
+					<input type="text" name="frm_name" id="frm_name">
 				</div>
 
-				<div class="item label">
-					<label>Email</label>
+				<div class="itemCont label">Email</div>
+				<div class="itemCont inp">
+					<input type="text" name="frm_email" id="frm_email">
 				</div>
-				<div class="item inp">
-					<input type="text" name="nombre">
-				</div>
-
-				<div class="item label">
-					<label>País</label>
-				</div>
-				<div class="item inp">
-					<input type="text" name="nombre">
-				</div>
-
-				<div class="item label">
-					<label>Juguetes preferidos</label>
-				</div>
-				<div class="item inp">
-					<input type="text" name="nombre">
+				
+				<div class="itemCont label">País</div>
+				<div class="itemCont inp">
+					<select class="form-input">
+						<option>Argentina</option>
+						<option>Uruguay</option>
+						<option>Brasil</option>
+					</select>
 				</div>
 
-				<div class="item label">
-					<label>Qué te gustaría contarnos?</label>
-				</div>
-				<div class="item inp">
-					<textarea rows="5" cols="30"></textarea>
+				<div class="itemCont label">Juguetes preferidos</div>
+				<div class="itemCont inp">
+					<input type="checkbox" class="form-input" /><div class="itemContImg dino"></div>
+					<input type="checkbox" class="form-input" /><div class="itemContImg auto"></div>
+					<input type="checkbox" class="form-input" /><div class="itemContImg oso"></div>
+					<input type="checkbox" class="form-input" /><div class="itemContImg puzl"></div>
 				</div>
 
-				<div class="item boton">
-					<button>a Jugar!</button>
+				<div class="itemCont label">Qué le gustaría decirnos?</div>
+				<div class="itemCont inp">
+					<textarea id="frm_txt" rows="6" cols="50"></textarea>
+				</div>
+				<div class="itemBoton">
+					<button class="boton" onclick="enviarForm()">Enviar Comentario</button>
 				</div>
 			</form>
 
 	</main>
 	<footer>© 2024 Dev Web | <a href="about.html">NOSOTROS</a> | <a href="contact.html">CONTÁCTENOS</a></footer>
 	<style>
-
 	</style>
 	<script>
 	</script>
