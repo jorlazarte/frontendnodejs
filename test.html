@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bienvenido a El gato mira arriba</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="f-container fixed-hf">
+  <header>
+    <a href="">header link</a>
+    <a href="">header link</a>
+    <a href="">header link</a>
+  </header>
+  <div class="main">
+    <p>add or remove "fixed-hf" to have fixed header and footer and scrollable main section</p>
+    a<br/>
+    b<br/>
+    c<br/>
+    <div style="display:block">
+      <p>change none/block to test shorter content</p>
+    d<br/>
+    e<br/>
+    f<br/>
+    g<br/>
+    h<br/>
+    i<br/>
+    j<br/>
+    k<br/>
+    l<br/>
+    m<br/>
+    n<br/>
+    o<br/>
+    p<br/>
+    q<br/>
+    r<br/>
+    s<br/>
+    t<br/>
+    u<br/>
+    v<br/>
+    w<br/>
+    x<br/>
+    y<br/>
+    z<br/>
+    </div>
+  </div>
+  <footer>
+    <a href="">footer link</a>
+  </footer>
+</div>
+	<style>
+		html,
+body{
+  margin: 0;
+  padding: 0;
+}
+.f-container{
+  height: 100vh; /* for shorter content */
+  display: flex;
+  flex-direction: column;
+    
+  /*ie10*/
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+}
+
+.main{
+  background-color: #eee;
+  flex: 1;
+  
+  /*ie10*/
+  -ms-flex: 1 1 auto; /*needs both shrink and grow*/
+}
+
+header,
+footer{
+  background-color: #ccc;
+  flex-basis: 50px;
+  
+  /*ie10*/
+  -ms-flex-preferred-size: 50px;
+  
+  /*center align of links*/
+  display: flex;
+  align-items: center; /*vertical*/
+  justify-content: space-around; /*or space-between*/
+  /*ie10*/
+  display: -ms-flexbox;
+  -ms-flex-align: center; /*vertical*/
+  -ms-flex-line-pack: distribute; /*or justify*/
+}
+
+footer {
+  /*ie10 short content*/
+  margin-top: auto; 
+}
+header a{
+  /*ie10*/ 
+  /*hack to trigger the layout for horizontal alignment distribute/justify*/
+  display: inline-block;
+}
+/* fixed header and footer with scrollable main section */
+.fixed-hf .main{
+  overflow-y: auto;
+}
+	</style>
+	<script>
+	</script>
+	<script language="javascript" src="js\functions.js"></script>
+</body>
+</html>

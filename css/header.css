@@ -1,0 +1,208 @@
+header{
+	position: relative;
+	/*padding: 0 2rem;*/
+	font-family: 'Verdana';
+	width: 100%;
+	border: solid 1px #fff;
+	/*background: #f00;*/
+	font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	justify-content: center;
+	height: 90px;
+}
+/*****************************HEADER Y NAV****************************************/	
+.headerInfo{
+	width: 100%;
+	height: 25px;
+	background: #fff;
+	font-size: 12px;
+	border-bottom: solid 1px #ccc;
+	max-width: 1200px;
+	justify-content: center;
+	align-items: center;
+	/*background: #00f;*/
+	display: grid;
+}
+
+.headerInfoL{
+	font-size: 12px;
+	width: auto;
+	height: 20px;
+	/*background: #0f0;*/
+	display: flex;
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
+}
+.headerInfoR{
+	font-size: 12px;
+	width: auto;
+	height: 20px;
+	/*background: #0f0;*/
+	display: flex;
+	grid-template-columns: auto auto;
+	gap: 8px;
+}
+
+.infoLeft{
+	width: 180px;
+	display: grid;
+	grid-template-columns: auto auto;
+	/*background: #f00;*/
+}
+
+.info{
+	height: auto;
+	text-align: left;
+	color: #aaa;
+	margin-right: 6px;
+	padding-top: 3px;
+}
+
+div.email, div.phone, div.fb, div.ig, div.te, div.tw{
+	width:18px; 
+	height:18px;
+	margin-right: 6px;
+}
+
+div.email{background-image: url('../images/icons8-mensaje-18.png');}
+div.phone{background-image: url('../images/icons8-teléfono-18.png');}
+
+div.fb{background-image: url('../images/icons8-facebook-nuevo-18.png');}
+div.ig{background-image: url('../images/icons8-instagram-18.png');}
+div.te{background-image: url('../images/icons8-telegrama-18.png');}
+div.tw{background-image: url('../images/icons8-twitterx-18.png');}
+
+div.fb:hover{cursor:pointer;background-image: url('../images/icons8-facebook-nuevo-18red.png');}
+div.ig:hover{cursor:pointer;background-image: url('../images/icons8-instagram-18red.png');}
+div.te:hover{cursor:pointer;background-image: url('../images/icons8-telegrama-18red.png');}
+div.tw:hover{cursor:pointer;background-image: url('../images/icons8-twitterx-18red.png');}
+
+li{
+	list-style:none;
+}
+
+li a{
+	text-decoration: none;
+	color:#000;
+	font-size: 1rem;
+}
+
+li a:hover{
+	font-style: italic;
+}
+
+.navbar, .headerInfo{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.navbar{height: 60px;}
+
+.navbar .logo a {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #ccc;
+	
+}
+
+ul li.selected{
+	border-bottom: solid 3px #999;	
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.navbar .toggle_btn {
+	color: #000;
+	font-size: 1.5rem;
+	cursor:pointer;
+	display: none;
+	margin-right: 8px;
+}
+
+.action_btn{
+	background-color: orange;
+	color: #000;
+	padding: 0.5rem 1rem;
+	border:none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: scale 0.2 easy;
+}
+
+.action_btn:hover{
+	scale: 1.05;
+	color: #000;
+}
+
+
+/*dropdown menu*/
+.dropdown_menu{
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top:60px;
+	height: 0;
+	width: 300px;
+	background: rgb(150,100,255,0.1);
+	backdrop-filter: blur(15px);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: height 1s;
+	z-index: 1;
+}
+
+.dropdown_menu.open{
+	height: 235px;
+}
+
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.dropdown_menu .action_btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* responsive media */
+@media(max-width: 992px){
+	.navbar .links,
+	.navbar .action_btn{
+		display: none;
+	}
+
+	.navbar .toggle_btn{
+		display: block;
+	}
+
+	.dropdown_menu{
+		display: block;
+	}
+}
+
+@media(max-width: 576px){
+	.dropdown_menu{
+		left: 2rem;
+		width: unset;
+	}
+
+	.info{display: none;}
+	.email{margin-right: 10px;}
+}

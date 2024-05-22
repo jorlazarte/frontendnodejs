@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bienvenido a El gato mira arriba</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/service.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+			<div class="headerInfo">
+				<div class="headerInfoL">
+					<div class="email"></div>
+					<div class="info">jorgelazarte81@gmail.com</div>
+					<div class="phone"></div>
+					<div class="info">+54 9 11 6244 5251</div>
+				</div>
+				<div class="headerInfoR">
+					<div class="ig"></div>
+					<div class="fb"></div>
+					<div class="te"></div>
+					<div class="tw"></div>
+				</div>		
+			</div>
+			<div class="navbar">
+					<div class="logo"><a href="#">Web Dev</a></div>
+					<ul class="links">
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="about.html">NOSOTROS</a></li>
+						<li class="selected"><a href="service.html">PRODUCTOS</a></li>
+						<li><a href="contact.html">CONTÁCTENOS</a></li>
+					</ul>
+					<a href="#" class="action_btn">Get started!</a>
+					<div class="toggle_btn">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+			</div>
+
+			<div class="dropdown_menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#" class="action_btn">Get started!</a></li>
+				</ul>
+			</div>
+	</header>
+	<main>
+		<div class="mainTitulo">
+			<div>
+				<span onclick="recorreNodos()">Bienvenido</span> al sitio de los juguetes usados!
+			</div>
+			
+			<!--<a href="#" onclick="javascript: addPrd();">Agregar al carrito!</a>&nbsp;
+			<a href="#" onclick="javascript: document.getElementById('backListaProd').style.display = 'block';">Ver el carrito!</a>
+			-->		
+		</div>
+		<div class="mainTexto">
+		Nuestra obligación es trabajar para que todos los niños y sus familias puedan encontrar ese juguete tan especial que recordarán con cariño toda su vida.
+		</div>
+
+		<div class="grid-container">
+			<div class="contImg">
+				<div class="imgCarrito" onclick="javascript: document.getElementById('backListaProd').style.display = 'grid'"></div>
+				<div class="msgCntProd" id="divCntProd">4</div>
+			</div>
+			<div class="grid-itemCont">
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_1" id="id_1" value="1">
+					<div class="grid-item-desCont_1" id="itemNom_1">Autos</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_1_img" id="itemImg_1"></div>
+					<div class="grid-item-desCont_3" id="itemDes_1">Auto 4x4 verde</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_1">1632.36</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(1, 1)">Agregar!</button>
+					</div> 
+				</div>
+
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_2" id="id_2" value="2">
+					<div class="grid-item-desCont_1" id="itemNom_2">Autos</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_2_img" id="itemImg_2"></div>
+					<div class="grid-item-desCont_3" id="itemDes_2">Auto arenero celeste</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_2">1912.50</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(2, 1)">Agregar!</button>
+					</div> 
+				</div>
+
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_3" id="id_3" value="3">
+					<div class="grid-item-desCont_1" id="itemNom_3">Autos</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_3_img" id="itemImg_3"></div>
+					<div class="grid-item-desCont_3" id="itemDes_3">Auto de carrera</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_3">3500.00</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(3, 1)">Agregar!</button>
+					</div> 
+				</div>
+
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_4" id="id_4" value="4">
+					<div class="grid-item-desCont_1" id="itemNom_4">Autos</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_4_img" id="itemImg_4"></div>
+					<div class="grid-item-desCont_3" id="itemDes_4">Auto de carrera celeste</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_4">3215.75</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(4, 1)">Agregar!</button>
+					</div> 
+				</div>
+
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_5" id="id_5" value="5">
+					<div class="grid-item-desCont_1" id="itemNom_5">Dinosaurio</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_5_img" id="itemImg_5"></div>
+					<div class="grid-item-desCont_3" id="itemDes_5">Dinosaurio Pterodáctilo</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_5">2158.80</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(5, 1)">Agregar!</button>
+					</div> 
+				</div>
+
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_6" id="id_6" value="6">
+					<div class="grid-item-desCont_1" id="itemNom_6">Dinosaurio</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_6_img" id="itemImg_6"></div>
+					<div class="grid-item-desCont_3" id="itemDes_6">Dinosaurio Ceratosaurus</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_6">2263.00</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(6, 1)">Agregar!</button>
+					</div> 
+				</div>
+				<div class="grid-item-desCont">
+					<input type="hidden" name="id_7" id="id_7" value="7">
+					<div class="grid-item-desCont_1" id="itemNom_7">Dinosaurio</div>
+					<div class="grid-item-desCont_2 grid-item-desCont_7_img" id="itemImg_7"></div>
+					<div class="grid-item-desCont_3" id="itemDes_7">Dinosaurio Ceratosaurus</div>
+					<div class="grid-item-desCont_4">Precio: $<span class="itemPrecio" id="itemPre_7">2756.45</span>.-</div>
+					<div class="grid-item-desCont_5">
+						<button onclick="addProd(7, 1)">Agregar!</button>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>© 2024 Dev Web | <a href="about.html">NOSOTROS</a> | <a href="contact.html">CONTÁCTENOS</a></footer>
+
+	<!-- TABLA CON EL LISTADO DE PRODUCTOS AGREGADOS AL CARRITO -->
+	<div id="backListaProd" class="noDisplay">
+		<!--<img id="fullImg" />-->
+		<span id="closeBtn" onclick="javascript: closeFullView();">X</span>
+		<div class="cntLstProd">
+			<input type="hidden" name="iCntProd" id="iCntProd" value="0">
+			<div class="divTable" id="tblPrd">
+				<div class="divTrSpan">
+					<div class="divTd" onclick="recorreTr();">LISTADO DE PRODUCTOS</div>
+				</div>
+				<div class="divTr" id="tr_tit">
+					<div class="divTd tit td1">#</div>
+					<div class="divTd tit td2">Producto</div>
+					<div class="divTd tit td3">Descripci&oacute;n</div>
+					<div class="divTd tit td4">Cantidad</div>
+					<div class="divTd tit td5">Precio unidad</div>
+					<div class="divTd tit td6">Precio total</div>
+					<div class="divTd tit td7">&nbsp;</div>
+				</div>
+				<div class="divTrSpan" id="msgSinReg">
+					<div class="divTd">NO SE ENCONTRARON REGISTROS</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FIN TABLA CON EL LISTADO DE PRODUCTOS AGREGADOS AL CARRITO -->
+		<script>
+			
+		</script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/service.js"></script>
+</body>
+</html>

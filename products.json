@@ -1,0 +1,15 @@
+{"productos": {
+  "fecha": "13/05/2024",
+  "listado": [
+        {"titulo": "Batman", "desc": "Muñeco de batman tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "1.jpg"},
+        {"titulo": "Superman", "desc": "Muñeco de Superman tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Thor", "desc": "Muñeco de Thor tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "1.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"},
+        {"titulo": "Linterna verde", "desc": "Muñeco de Linterna verde tamaño mediano con articulaciones y capa para disfrutar y poder jugar.", "imagen": "2.jpg"}
+      ]
+  }
+}

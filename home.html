@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bienvenido a El gato mira arriba</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+			<div class="headerInfo">
+				<div class="headerInfoL">
+					<div class="email"></div>
+					<div class="info">jorgelazarte81@gmail.com</div>
+					<div class="phone"></div>
+					<div class="info">+54 9 11 6244 5251</div>
+				</div>
+				<div class="headerInfoR">
+					<div class="ig"></div>
+					<div class="fb"></div>
+					<div class="te"></div>
+					<div class="tw"></div>
+				</div>		
+			</div>
+
+			<div class="navbar">
+					<div class="logo"><a href="#">Web Dev</a></div>
+					<ul class="links">
+						<li><a href="index.html">INICIO</a></li>
+						<li><a href="about.html">NOSOTROS</a></li>
+						<li><a href="service.html">PRODUCTOS</a></li>
+						<li><a href="contact.html">CONTÁCTENOS</a></li>
+					</ul>
+					<a href="#" class="action_btn">Get started!</a>
+					<div class="toggle_btn">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+			</div>
+
+			<div class="dropdown_menu">
+				<ul class="links">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#" class="action_btn">Get started!</a></li>
+				</ul>
+			</div>
+	</header>
+	<div class="main">
+		<h2>Bienvenido a El gato mira arriba</h2>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+	</div>
+	<footer>FOOTER</footer>
+		<script>
+			const toggleBtn = document.querySelector('.toggle_btn')
+			const toggleBtnIcon = document.querySelector('.toggle_btn i')
+			const dropDownMenu = document.querySelector('.dropdown_menu')
+
+			toggleBtn.onclick = function(){
+				dropDownMenu.classList.toggle('open')
+				const isOpen = dropDownMenu.classList.contains('open')
+				//alert(toggleBtnIcon.classList);
+				toggleBtnIcon.classList = isOpen
+				? 'fa-solid fa-xmark'
+				: 'fa-solid fa-bars'
+
+			}
+		</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import "header.css";
+@import "footer.css";
+@import "homepage.css";
+
+*{
+	margin:0px;
+	box-sizing: border-box;
+	/*background: #ccc;*/
+}
+
+body{
+	height: auto;
+	/*background: #000;*/
+	width: 100%;
+	font-family: center;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*background-image: url(../images/IMG_5249.jpg);
+	background-size: cover;
+	background-position: center;*/
+	
+
+}
+/****************************************************/
+main{
+	position: relative;
+	/*padding: 0 2rem;*/
+	font-family: 'Verdana';
+	width: 100%;
+	border: solid 1px #fff;
+	
+	font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	justify-content: center;
+	max-width: 1200px;
+	/*background: #ccc;*/
+	min-height: calc(100vh - 130px);
+	/*height: 900px;*/
+}
+
+.mainCont{
+	display: block;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	align-items: center;
+	/*background: #0f0;*/
+}
+
+.mainTitulo{
+	padding: 20px 0 5px 5px;
+	text-align: left;
+	color: #000;
+	width: auto;
+	font-family: WF Visual Sans, sans-serif;
+	max-width: 900px;
+	display: grid;
+	grid-template-columns: auto auto 25px;
+}
+
+.mainTexto{
+	font-size: 14px;
+	text-align: left;
+	padding: 0 0 10px 5px;
+	color: #000;
+	border-bottom: solid 1px #999;
+	margin-bottom: 5px;
+}
+
+.mainTit{
+	width: auto;
+}
+
+/****************************************************/
+
+
+
+
+/************************************************************
+@media (max-width:960px){
+	main{background: #0f0; display: grid; justify-content: center;}
+
+	.flex-container{
+		width: auto;
+		background: #fff;
+	}
+	.flex-container item{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		height: 400px;
+	}
+
+	.left{
+		flex: 0 100vh 0;
+	}
+
+	#fullImg{
+		width: 400px;
+		height: 350px;
+		border-radius: 14px;
+	}
+
+	#frm_txt{
+		width: 250px;
+		height: 100px;
+	}
+}
+****************/

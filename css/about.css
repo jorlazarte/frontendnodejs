@@ -1,0 +1,48 @@
+.grid-containerAbout{
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 	"item1 item2 item3"
+    						"itemImg itemImg itemImg"
+    						"item4 item4 item4";
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin: 15px 0;
+}
+
+.itemTxt{
+    display:grid; 
+    border-left: solid 5px #000; 
+    background: #ddd; 
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+    padding: 9px 0 5px 20px; 
+    text-align: left; 
+    grid-area: itemImg; 
+    margin: 10px; 
+    height: auto; 
+    font-family: small-caps 100%/200% serif ; 
+    font-size: 15px; 
+    color: #000; 
+    letter-spacing: 3px;
+}
+
+.item{ /*background:#0f0;*/ width: 95px; height: 90px; margin: 0 auto 10px auto; border-radius: 50px;}
+.item1{ /*background:#00f;*/ grid-area: item1; background-image: url('../images/uploads1/juego.jpg');background-size: 100px 100px; background-repeat: no-repeat;}
+.item2{ /*background:#00f;*/ grid-area: item2; background-image: url('../images/uploads1/juego2.jpg');background-size: 120px 120px; background-repeat: no-repeat;}
+.item3{ /*background:#00f;*/ grid-area: item3; background-image: url('../images/uploads1/juego3.jpg');background-size: 100px 100px; background-repeat: no-repeat;background-position: 80%;}
+
+.item4{grid-area: item4;width: 95px; height: 60px; margin: 0 auto; background-image: url('../images/icons8-felpa-50.png');background-size: 60px 60px; background-repeat: no-repeat;background-position: 80%; }
+
+@media (max-width:726px){
+    .itemTxt{min-width: 360px; height: auto; grid-template-columns: auto; font-size: 12px;}
+}
+@media (max-width:400px){
+    main{min-width: 380px;}
+
+    .itemTxt{min-width: 360px; height: auto; grid-template-columns: auto; font-size: 12px; text-align: center; border: 0; border-radius: 15px;} 
+}
