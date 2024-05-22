@@ -1,4 +1,16 @@
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
 
+toggleBtn.onclick = function(){
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+	//alert(toggleBtnIcon.classList);
+	toggleBtnIcon.classList = isOpen
+	? 'fa-solid fa-xmark'
+	: 'fa-solid fa-bars'
+
+}
 
 /**************************************************/
 function makeDiv(name,totalScore,gamesPlayed) {
