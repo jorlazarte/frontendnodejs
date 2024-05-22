@@ -16,6 +16,13 @@
 transition: all 0.3s ease 0s;
 }
 
+
+.no-scroll {
+    /* Debe tener altura específica para que funcione */
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 .contImg{display: grid; grid-template-columns: 30px 30px auto; margin: 0 auto; height: 29px; width: 98%; background: #ccc;}
 
 .grid-item-desCont_1{height: 20px; width: 150px; color: #000; text-align: left; font-size: 16px; /*background: #ccc;*/}
@@ -153,7 +160,7 @@ background-image: url('../images/uploads1/d3.jpg');
 
 .cntLstProd{
 	margin: 100px auto;
-	width: 600px;
+	width: auto;
 	height: 300px;
 	background: #fff;
 	border-radius: 14px;
@@ -189,7 +196,7 @@ background-image: url('../images/uploads1/d3.jpg');
   grid-template-columns: 30px 80px auto 80px 80px 120px 100px;
   border-bottom: solid 1px #ddd;
   font-size: 15px;
-  width: 100%;
+  width: auto;
 }
 .divTrSpan {
   /*background-color: rgba(255, 255, 255, 0.8);
@@ -290,6 +297,13 @@ div.trElimina{font-style: italic; color: #f00; font-weight: bold;}
 	cursor: pointer;
 }
 
+
+
+@media all and (max-width: 640px){
+	.divTd .tit .td3{display: none;}
+	.divTd .tit .td3{background: #0f0;}
+}
+
 @media all and (max-width: 550px){
 	.mainCont{
 		max-width: 550px;
@@ -326,6 +340,12 @@ div.trElimina{font-style: italic; color: #f00; font-weight: bold;}
 	.divTd {
 		font-size: 11px	
 	}
+	.td3{display: none;}
+
+	div[href*="insensitive" i] {
+	  color: cyan;
+	}
+
 	
 }
 

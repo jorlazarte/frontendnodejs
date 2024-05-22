@@ -144,4 +144,11 @@ function addProd(iId, iOpc){
 //cierra el listado de productos seleccionados
 function closeFullView(){
 	document.getElementById('backListaProd').style.display = 'none';
+	document.body.style.overflow = 'auto'
+}
+
+function verCarrito(){
+	document.getElementById('backListaProd').style.display = 'grid'
+	document.body.style.overflow = 'hidden'
+    //document.body.style.max-height = 100vh
 }
