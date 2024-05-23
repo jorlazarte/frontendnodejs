@@ -23,8 +23,6 @@ transition: all 0.3s ease 0s;
     overflow: hidden;
 }
 
-.contImg{display: grid; grid-template-columns: 30px 30px auto; margin: 0 auto; height: 29px; width: 98%; background: #ccc;}
-
 .grid-item-desCont_1{height: 20px; width: 150px; color: #000; text-align: left; font-size: 16px; /*background: #ccc;*/}
 .grid-item-desCont_2{
 									background-repeat: no-repeat;
@@ -54,6 +52,8 @@ transition: all 0.3s ease 0s;
 .itemPrecio{font-weight: bold;}
 .buttonAdd{ width:100%; background:#000; border-radius:10px; height: 30px; color: #fff; cursor: pointer;}
 
+.contImg{border-left: solid 5px #000; background: #ccc; display: grid; grid-template-columns: 30px 30px auto; margin: 0 auto; height: 29px; width: 98%;}
+
 .imgCarrito{
 	background-repeat: no-repeat;
 	background-position: center; 
@@ -67,7 +67,11 @@ transition: all 0.3s ease 0s;
 }
 
 .msgCntProd{
-
+	width: 100%;
+	font-size: 19px;
+	text-align: left;
+	margin-top: 3px;
+	display: inline-block;
 }
 
 .imgCarrito1{
@@ -155,12 +159,13 @@ background-image: url('../images/uploads1/d3.jpg');
 	background: rgba(0,0,0,0.8);
 	border-radius: 9px;
 	font-family: Arial;
-
+	display: none;
 }
 
 .cntLstProd{
+	display: grid;
 	margin: 100px auto;
-	width: auto;
+	width: 90%;
 	height: 300px;
 	background: #fff;
 	border-radius: 14px;
@@ -204,7 +209,7 @@ background-image: url('../images/uploads1/d3.jpg');
   /*padding: 20px;*/
   font-size: 30px;
   text-align: center;
-  display: block;
+  display: grid;
   grid-template-columns: auto;
   border-top: solid 1px #ddd;
   font-size: 15px;
@@ -289,69 +294,87 @@ div.trElimina{font-style: italic; color: #f00; font-weight: bold;}
 }
 
 #closeBtn{
-	position: absolute;
+	position: relative;
 	top: 12px;
 	right: 12px;
 	font-size: 2rem;
 	color: #fff;
 	cursor: pointer;
+	float: right;
 }
 
 
-
+/*
 @media all and (max-width: 640px){
-	.divTd .tit .td3{display: none;}
-	.divTd .tit .td3{background: #0f0;}
+			.grid-container {
+			  display: grid;
+			  grid-template-columns: auto auto auto auto auto;
+			  grid-gap: 10px;
+			  background-color: #2196F3;
+			  padding: 10px;
+			}
+
+			.divTr{border: solid 1px #000;}
+			.col4{width: 40px;}
+
+			.col3{ grid-column-start: 1; grid-column-end: 3; grid-row-start: 2;}
+			.col7{ grid-column-start: 3; grid-column-end: 6; grid-row-start: 2;}
 }
-
-@media all and (max-width: 550px){
-	.mainCont{
-		max-width: 550px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.mainTitulo{
-		text-align: center;
-		max-width: 550px;
-		width: 100%;
-		display: grid;
-		background: #ccc;
-		justify-content: center;
-		align-items: center;
-		grid-template-columns: auto 20px;
-	}
-
-	.mainTexto{
-		max-width: 550px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.grid-itemCont{
-		max-width: 550px;
-		display: flex;
-		justify-content: center;
-	}
-}
+*/
+@media all and (max-width: 638px){
+		
 
 
-@media (max-width:465px){
-	.divTd {
-		font-size: 11px	
-	}
-	.td3{display: none;}
+		.cntLstProd{width: 90%; margin: 20px auto;}
+		.divTable{width: auto;}
+		#tr_tit{width: auto;}
+		/*.divTable{
+				width: 100%;
+		}*/
 
-	div[href*="insensitive" i] {
-	  color: cyan;
-	}
+		.mainCont{
 
-	
-}
+			display: flex;
+			justify-content: center;
+		}
+		
+		.mainTitulo{
+			text-align: center;
+			max-width: 550px;
+			width: 100%;
+			display: grid;
+			background: #ccc;
+			justify-content: center;
+			align-items: center;
+			grid-template-columns: auto 20px;
+		}
+		
+		.divTd .tit .td3{ display:none; }
 
-@media (max-width:500px){
+		.divTr{}
+		/*
+		.mainTexto{
+			max-width: 550px;
+			display: flex;
+			justify-content: center;
+		}
+		*/
+		/*
+		.grid-itemCont{
+			max-width: 550px;
+			display: flex;
+			justify-content: center;
+		}*/
 
-	.imgCarrito{
-		/*display: none;*/
-	}
+		.td3, .td4, .td5, .td6, .td7{display: none;}
+
+		.col4{ grid-column-start: 1; grid-row-start: 2;}
+		.col5{ grid-column-start: 2; grid-row-start: 2;}
+		.col3{ grid-column-start: 1; grid-column-end: 4; grid-row-start: 3;}
+		.col7{ grid-column-start: 3; grid-row-start: 2; grid-row-end: 3;}
+
+		.divTd .col3,
+		.divTd .col7,
+		.divTd .col5,
+		.divTd .col4{height: 20px;}
 }
