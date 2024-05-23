@@ -102,42 +102,40 @@ li a:hover{
 .navbar{height: 60px;}
 
 .navbar .logo{
-	background-image: url('../images/icons8-motor-de-vapor-32.png');
+	/*background-image: url('../images/icons8-motor-de-vapor-32.png');*/
 	height: 32px;
 	width: 32px;
 	width: 33px;
 	height: 33px; 
 
-	animation-duration: 2s;
-	animation-name: slidein;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation: movimiento 5s infinite;
+
 }
+/*
+.contLogo{display: flex; width: 90%; height: 40px; color: #000; display: block;}
+.nomWeb{}
 
-.contLogo{width: 150px; height: 40px;}
+@keyframes movimiento {
+	0% {opacity: 0;}
+	60% {opacity: 100%;}
+	70% {opacity: 90%;}
+	100% {opacity: 0;}
 
+	from {
+	margin-left: 0%;
+	width: 35px;
+	}
 
-@keyframes slidein {
-  from {
-    margin-left: 0%;
-    width: 35px;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 10%;
-    width: 35px;
-    opacity: 100%;
-  }
+	to {
+	margin-left: 50%;
+	width: 35px;
+	}
 }
+*/
 
 
 .navbar .logo a {
 	font-size: 1.5rem;
-	font-weight: bold;
-	color: #ccc;
-
-
 }
 
 ul li.selected{

@@ -7,15 +7,16 @@
     grid-template-rows: auto;
     grid-template-areas: 	"item1 item2 item3"
     						"itemImg itemImg itemImg"
+                            "txt1 txt1 txt1"
+                            "txt2 txt2 txt2"
     						"item4 item4 item4";
 
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+
     margin: 15px 0;
 }
 
 .itemTxt{
-    display:grid; 
+    display: grid; 
     border-left: solid 5px #000; 
     background: #ddd; 
     border-top-right-radius: 15px; 
@@ -30,6 +31,9 @@
     color: #000; 
     letter-spacing: 3px;
 }
+
+.txt1{grid-area: txt1;}
+.txt2{grid-area: txt2;}
 
 .item{ /*background:#0f0;*/ width: 95px; height: 90px; margin: 0 auto 10px auto; border-radius: 50px;}
 .item1{ /*background:#00f;*/ grid-area: item1; background-image: url('../images/uploads1/juego.jpg');background-size: 100px 100px; background-repeat: no-repeat;}
