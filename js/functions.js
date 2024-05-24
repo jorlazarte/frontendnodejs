@@ -33,25 +33,6 @@ function recorreTr(){
 	const nicknames = document.querySelectorAll('[id="nickname"]');
 }
 
-function validateForm(){
-	let cNom = document.getElementById('frm_name').value
-	let cMail = document.getElementById('frm_email').value
-
-	let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	
-	if( cNom == '' || cNom.length <= 3 ){
-		alert('Ingrese un nombre y vuelva a intentarlo!')
-		return false
-	}
-	
-	if( cMail == '' || !filter.test(cMail) ){
-		alert('Ingrese un email correcto y vuelva a intentarlo!')
-		return false
-	}
-
-	alert('ok')
-	return true
-}
 
 function recorreNodos(){
   

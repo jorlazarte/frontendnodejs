@@ -28,7 +28,7 @@
 				</div>		
 			</div>
 			<div class="navbar">
-					<div class="logo"><a href="#">Web Dev</a></div>
+					<div class="logo"><a href="#"></a></div>
 					<ul class="links">
 						<li><a href="index.html">INICIO</a></li>
 						<li><a href="about.html">NOSOTROS</a></li>
@@ -43,43 +43,53 @@
 
 			<div class="dropdown_menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="service.html">Services</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="#" class="action_btn">Get started!</a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="about.html">Nosotros</a></li>
+					<li><a href="service.html">Productos</a></li>
+					<li><a href="contact.html">Contáctenos</a></li>
+					<li><a href="#" class="action_btn">Empezar!</a></li>
 				</ul>
 			</div>
 	</header>
 	<main>
 			<div class="mainTitulo">Dejanos un mensaje y contanos de vos, de tu infancia!</div>
 			<div class="mainTexto">
-			Nuestra obligación es trabajar para que todos los niños y sus familias puedan encontrar ese juguete tan especial que recordarán con cariño toda su vida.
+				<p>
+				El escondite sonoro: escondemos un objeto que suene, como un despertador, una radio o un patito que haga «cuá cuá», y le animamos a que lo encuentre. Luego le pedimos que lo esconda él. Con este juego desarrolla las facultades auditivas y fomenta su atención y su sentido de la orientación.
+				</p>
+				Juego de los bailes: le entusiasma cantar y bailar. Canciones populares como «que llueva, que llueva», «el corro de la patata» o «pasemisí» se pueden plantear como bailes divertidos para cogerse de las manos, saltar, dar vueltas…
+				<p>
+				Juego de la aventura: está especialmente indicado para los que empiezan a ponerse de pie e incluso acaban de comenzar a dar sus primeros pasos. Se le prepara un recorrido en la casa lleno de aventuras, en el que tiene que ir cogiendo objetos que le llamen la atención. Para ayudarle a desplazarse de un lado a otro conviene acercarle muebles estables que le sirvan de apoyo. La meta será llegar con alguno de los tesoros a donde estén papá o mamá, y el premio, un buen achuchón.
+				</p>
+				<p>
+				<b>Escribinos y contanos de vos, de tus juegos, de tu infancia, todo nos suma para poder estar mas cerca de nuestros peques...</b>
+				</p>
 			</div>
 			<form class="contForm" id="contForm" onsubmit="return validateForm()" method="post">
 				<div class="item label">
 					<label>Nombre</label>
 				</div>
 				<div class="item inp">
-					<input type="text" name="nombre">
+					<input type="text" name="frm_name"  id="frm_name">
 				</div>
 
 				<div class="item label">
 					<label>Email</label>
 				</div>
 				<div class="item inp">
-					<input type="text" name="nombre">
+					<input type="text" name="frm_email" id="frm_email">
 				</div>
 
 				<div class="item label">
 					<label>País</label>
 				</div>
 				<div class="item inp">
-					<select>
-						<option>Argentina</option>
-						<option>Uruguay</option>
-						<option>Perú</option>
-						<option>Brasil</option>
+					<select name="frm_pais" id="frm_pais">
+						<option value="">Seleccione</option>
+						<option value="ar">Argentina</option>
+						<option value="uy">Uruguay</option>
+						<option value="pr">Perú</option>
+						<option value="br">Brasil</option>
 					</select>
 				</div>
 
@@ -87,21 +97,21 @@
 					<label>Juguetes preferidos</label>
 				</div>
 				<div class="item inp">
-					<input type="checkbox" class="form-input" /><div class="itemContImg dino"></div>
-					<input type="checkbox" class="form-input" /><div class="itemContImg auto"></div>
-					<input type="checkbox" class="form-input" /><div class="itemContImg oso"></div>
-					<input type="checkbox" class="form-input" /><div class="itemContImg puzl"></div>
+					<input type="checkbox" class="form-input" id="frm_jug1" name="frm_jug" /><div class="itemContImg dino"></div>
+					<input type="checkbox" class="form-input" id="frm_jug2" name="frm_jug" /><div class="itemContImg auto"></div>
+					<input type="checkbox" class="form-input" id="frm_jug3" name="frm_jug" /><div class="itemContImg oso"></div>
+					<input type="checkbox" class="form-input" id="frm_jug4" name="frm_jug" /><div class="itemContImg puzl"></div>
 				</div>
 
 				<div class="item label">
 					<label>Qué te gustaría contarnos?</label>
 				</div>
 				<div class="item inp">
-					<textarea rows="5" cols="30"></textarea>
+					<textarea rows="5" cols="30" id="frm_txt" name="frm_txt"></textarea>
 				</div>
 
 				<div class="item botonCont">
-					<button class="boton">a Jugar!</button>
+					<button class="boton" type="submit">a Jugar!</button>
 				</div>
 			</form>
 
@@ -113,5 +123,6 @@
 	<script>
 	</script>
 	<script language="javascript" src="js\functions.js"></script>
+	<script language="javascript" src="js\contact.js"></script>
 </body>
 </html>

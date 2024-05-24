@@ -69,10 +69,11 @@ div.puzl{background-image: url('../images/icons8-puzle-20.png');}
 
 /******************************/
 .contForm input[type="text"]{
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	height: 25px;
-
 }
+
+#frm_email{width: 250px}
 
 .contForm input[type="checkbox"]{
 	border-radius: .25rem;

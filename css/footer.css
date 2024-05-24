@@ -26,6 +26,7 @@ footer{
 	width: 100%;*/
 	/*position: absolute;*/
 	bottom: 0;
+	position: relative;
 
 	height: 40px; 
 	font: 12px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;	

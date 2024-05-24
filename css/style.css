@@ -23,7 +23,7 @@ body{
 	/*background-image: url(../images/IMG_5249.jpg);
 	background-size: cover;
 	background-position: center;*/
-	
+	min-height: calc(100vh - 130px);
 
 }
 /****************************************************/
@@ -76,6 +76,10 @@ main{
 	width: auto;
 }
 
+
+.mainTexto p{
+	margin-top: 10px;
+}
 /****************************************************/
 
 
