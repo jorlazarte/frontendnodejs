@@ -343,7 +343,7 @@ div.trElimina{font-style: italic; color: #f00; font-weight: bold;}
 			max-width: 550px;
 			width: 100%;
 			display: grid;
-			background: #ccc;
+			/*background: #ccc;*/
 			justify-content: center;
 			align-items: center;
 			grid-template-columns: auto 20px;
