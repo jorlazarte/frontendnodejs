@@ -102,13 +102,13 @@ li a:hover{
 .navbar{height: 60px;}
 
 .navbar .logo{
-	/*background-image: url('../images/icons8-motor-de-vapor-32.png');*/
-	height: 32px;
-	width: 32px;
-	width: 33px;
-	height: 33px; 
+	background-image: url('../images/icons8-cometa-40.png');
+	height: 40px;
+	width: 40px;
+	background-size: 40px 40px;
 
 	animation: movimiento 5s infinite;
+	display: none;
 
 }
 /*
@@ -159,7 +159,7 @@ ul li.selected{
 }
 
 .action_btn{
-	background-color: orange;
+	/*background-color: orange;*/
 	color: #000;
 	padding: 0.5rem 1rem;
 	border:none;
@@ -170,6 +170,11 @@ ul li.selected{
 	cursor: pointer;
 	transition: scale 0.2 easy;
 	margin-right: 5px;
+	background-image: url('../images/icons8-cometa-40.png');
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+
 }
 
 .action_btn:hover{
@@ -195,7 +200,7 @@ ul li.selected{
 }
 
 .dropdown_menu.open{
-	height: 235px;
+	height: 175px;
 }
 
 .dropdown_menu li{
@@ -229,6 +234,8 @@ ul li.selected{
 
 	.info{display: none;}
 	.email{margin-right: 10px;}
+	.navbar .logo{display: block;}
+	.action_btn{display: none;}
 }
 /* Small devices (600px and up) */
 @media only screen and (min-width: 600px) {

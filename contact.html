@@ -28,14 +28,16 @@
 				</div>		
 			</div>
 			<div class="navbar">
-					<div class="logo"><a href="#"></a></div>
+					<div class="contLogo">
+						<div class="logo"><a href="#"></a></div>
+					</div>
 					<ul class="links">
 						<li><a href="index.html">INICIO</a></li>
 						<li><a href="about.html">NOSOTROS</a></li>
 						<li><a href="service.html">PRODUCTOS</a></li>
 						<li class="selected"><a href="contact.html">CONTÁCTENOS</a></li>
 					</ul>
-					<a href="#" class="action_btn">Get started!</a>
+					<a href="#" class="action_btn"></a>
 					<div class="toggle_btn">
 						<i class="fa-solid fa-bars"></i>
 					</div>
@@ -47,7 +49,6 @@
 					<li><a href="about.html">Nosotros</a></li>
 					<li><a href="service.html">Productos</a></li>
 					<li><a href="contact.html">Contáctenos</a></li>
-					<li><a href="#" class="action_btn">Empezar!</a></li>
 				</ul>
 			</div>
 	</header>
@@ -55,17 +56,19 @@
 			<div class="mainTitulo">Dejanos un mensaje y contanos de vos, de tu infancia!</div>
 			<div class="mainTexto">
 				<p>
+				Compartimos dos de nuestros juegos favoritos: el escondite sonoro y el juego de las aventuras.
+				</p>
+				<p>
 				El escondite sonoro: escondemos un objeto que suene, como un despertador, una radio o un patito que haga «cuá cuá», y le animamos a que lo encuentre. Luego le pedimos que lo esconda él. Con este juego desarrolla las facultades auditivas y fomenta su atención y su sentido de la orientación.
 				</p>
-				Juego de los bailes: le entusiasma cantar y bailar. Canciones populares como «que llueva, que llueva», «el corro de la patata» o «pasemisí» se pueden plantear como bailes divertidos para cogerse de las manos, saltar, dar vueltas…
 				<p>
 				Juego de la aventura: está especialmente indicado para los que empiezan a ponerse de pie e incluso acaban de comenzar a dar sus primeros pasos. Se le prepara un recorrido en la casa lleno de aventuras, en el que tiene que ir cogiendo objetos que le llamen la atención. Para ayudarle a desplazarse de un lado a otro conviene acercarle muebles estables que le sirvan de apoyo. La meta será llegar con alguno de los tesoros a donde estén papá o mamá, y el premio, un buen achuchón.
 				</p>
 				<p>
-				<b>Escribinos y contanos de vos, de tus juegos, de tu infancia, todo nos suma para poder estar mas cerca de nuestros peques...</b>
+				<b>Escribinos y contanos de vos, de tus juegos, de tu infancia, todo nos suma para poder estar mas cerca de nuestros peques...podrás adjuntar una imagen mostrándonos algún juego</b>
 				</p>
 			</div>
-			<form class="contForm" id="contForm" onsubmit="return validateForm()" method="post">
+			<form class="contForm" id="contForm" onsubmit="return validateForm()" method="post"  enctype="multipart/form-data">
 				<div class="item label">
 					<label>Nombre</label>
 				</div>
@@ -83,6 +86,7 @@
 				<div class="item label">
 					<label>País</label>
 				</div>
+
 				<div class="item inp">
 					<select name="frm_pais" id="frm_pais">
 						<option value="">Seleccione</option>
@@ -92,7 +96,13 @@
 						<option value="br">Brasil</option>
 					</select>
 				</div>
+				<div class="item label">
+					<label>Imagen (Solo archivos .jpg):</label>
+				</div>
+				<div class="item inp">
+					<input type="file" name="frm_file" id="frm_file">
 
+				</div>
 				<div class="item label">
 					<label>Juguetes preferidos</label>
 				</div>

@@ -29,6 +29,11 @@ function validateForm(){
 		return false
 	}
 
+	if( !validateFileType( document.getElementById('frm_file') ) ){
+		alert('Revise el archivo adjuntado y vuelva a intentarlo por favor, recuerde que solo pueden ser imagenes JPG')
+		return false;
+	}
+
 	if( !chkDino.checked && !chkDino.checked && !chkDino.checked && !chkDino.checked){
 		alert('Selecciona un juguete o un juego que te guste, todos tenemos uno favorito...')
 		return false
@@ -39,7 +44,24 @@ function validateForm(){
 		oTxt.focus()
 		return false
 	}
-	alert('ok')
+	
+	alert('Formulario enviado con éxito, nos pondremos en contacto a la brevedad.')
 	return false
 	
+}
+
+function validateFileType( o ) {
+	
+	let lstTypes = ['image/jpeg']
+	//alert( o );
+	if ( o.files[0] === undefined )
+		return false
+
+	if (!lstTypes.includes( o.files[0].type) ) {
+		//alert('Invalid file type. Please upload a JPEG, PNG, or PDF file.');
+		//document.getElementById('frm_file').value = '';
+		return false
+	}
+	
+	return true
 }
